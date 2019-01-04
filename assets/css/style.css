@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/bg.png");
 }
 
 * {
@@ -23,6 +23,11 @@ body {
   clear: both;
 }
 
+a:hover { 
+  opacity: .4;
+  filter:alpha(opacity=40); 
+}
+
 h1,
 h2,
 h3,
@@ -30,8 +35,14 @@ p {
   margin-bottom: 20px;
 }
 
+p {
+  font-family: 'Crimson Text', serif;
+  font-size: 115%;
+}
+
 p:last-child {
   margin-bottom: 0;
+
 }
 
 h1,
@@ -39,7 +50,7 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #4aaaa5;
+  color: lightskyblue;
 }
 
 h1 {
@@ -64,8 +75,8 @@ h3 {
   margin-left: -8px;
   margin-top: -8px;
   overflow: auto;
-  color: #ffffff;
-  background: #ffffff;
+  color: rgba(248,248,255, .9);
+  background: rgba(248,248,255, .9);
   border-bottom: 2px solid #cccccc;
 }
 
@@ -77,15 +88,17 @@ h3 {
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
+  margin-left: 55px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
 }
 
 nav {
   float: right;
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-right: 10%;
+  opacity: 1;
 }
 
 nav a {
@@ -111,9 +124,11 @@ footer {
   color: #ffffff;
   color: #cccccc;
   text-align: center;
-  background: #666666;
-  border-top: 8px solid #4aaaa5;
+  background: rgba(102, 102, 102, .7);
+  border-top: 1px solid rgba(248,248,255, .9);
   height: 50px;
+  margin-left: -5%;
+  margin-right: -5%;
 }
 
 h3, h2 {
@@ -128,6 +143,7 @@ h3, h2 {
 #main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
+
 }
 
 .main-section {
@@ -135,9 +151,10 @@ h3, h2 {
   width: 100%;
   max-width: 960px;
   padding: 30px;
-  margin: 0px 0 40px;
+  margin: 0px 0 40px 50px;
   background: #ffffff;
   border: 1px solid #dddddd;
+  opacity: .9;
 }
 
 /* portfolio page */
@@ -156,8 +173,9 @@ h3, h2 {
 
 .work img {
   width: 100%;
+  height: 240px;
   border: 0 none;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .work h3 {
@@ -170,7 +188,7 @@ h3, h2 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #4aaaa5;
+  background: #87cefa;
   border-bottom: 0;
 }
 
@@ -218,7 +236,7 @@ input[type=submit] {
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
-  background: #4aaaa5;
+  background: #87cefa;
   border: 0 none;
 }
 
